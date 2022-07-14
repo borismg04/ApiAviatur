@@ -1,0 +1,11 @@
+.suggestion {
+  cursor: pointer;
+  border-right: 1px solid rgb(57,60,255);
+  border-left: 1px solid rgb(57, 60, 255);
+  border-bottom: 1px solid rgb(45, 170, 253);
+}
+
+.suggestion:hover {
+  background-color: rgb(45, 170, 253);
+  color: white;
+}
