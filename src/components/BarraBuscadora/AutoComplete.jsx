@@ -1,6 +1,6 @@
 import axios from "axios"
 import { useState,useEffect } from "react"
-// import 'bootstrap/dist/css/bootstrap.min.css'
+import AutoCompleteStyles from './AutoComplete.modules.css'
 
 
 const AutoComplete = () => {
@@ -18,6 +18,11 @@ const AutoComplete = () => {
   useEffect(() => {
     consultApi()
   },[])
+
+  const onSuggestionHandler = (text) => {
+    setText(text)
+    setSuggestions([])
+  }
 
   const onChangeHandler = (text) => {
     let matches = []
@@ -45,8 +50,17 @@ const AutoComplete = () => {
         />
         {suggestions && suggestions.map((city, index) => {
           return (
-            <div key={index}>
-              {city.name_city}
+            <div 
+              key={index}
+              className={AutoCompleteStyles.suggestion}
+              onClick={() => onSuggestionHandler(city.name_city)}
+              onBlur={() => {
+                setTimeout(() => {
+                  setSuggestions([])
+                }, 100)
+              }}
+            >
+                {city.name_city}
             </div>
           )}
         )}
