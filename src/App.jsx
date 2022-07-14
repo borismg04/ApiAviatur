@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import BarraBusqueda from './components/BarraBusqueda'
+import BarraBusqueda from './components/BarraBuscadora/AutoComplete'
 import './App.css'
 
 function App() {
