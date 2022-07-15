@@ -10,7 +10,7 @@ import iconFlyCar from './iconFlyCar.png';
 import Afacebook from './Afacebook.png';
 import AInsta from './AInsta.png';
 import ATwitter from './ATwitter.png';
-import ALinkeIn from './ALinkeIn.png';
+import ALinkeIn from './ALinkedIn.png';
 import AYoutube from './AYoutube.png';
 import iconANATO from './iconANATO.png';
 import iconIATA from './iconIATA.png';
@@ -18,7 +18,7 @@ import Fubicacion from './Fubicacion.png';
 import Fcorreo from './Fcorreo.png';
 import Ftell from './Ftell.png';
 import Fwhatsapp from './Fwhatsapp.png';
-import Fanswer from './Fanswer.png';
+import FooterAnswer from './FooterAnswer.png';
 import Fnit from './Fnit.png';
 import Fagencia from './Fagencia.png';
 import Fcheck from './Fcheck.png';
@@ -56,7 +56,7 @@ export default {
   Fcorreo,
   Ftell,
   Fwhatsapp,
-  Fanswer,
+  FooterAnswer,
   Fnit,
   Fagencia,
   Fcheck,
