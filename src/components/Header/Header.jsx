@@ -1,17 +1,15 @@
 import React from 'react'
-import images from '../../assets/images'
+// import images from '../../assets/images'
+import styles from './Header.module.css'
 
 const Header = () => {
   return (
-    <>
-      <div>
-        <img src={images.logo} alt="logo" />
+      <div className={styles.container}>
+        <div className={styles.contailner_title}>
+          <h2>Descubra nuevos </h2>
+          <h2>destinos.</h2>
+        </div>
       </div>
-      <div className="container">
-        <img src={images.header} alt="Header" />
-      </div>  
-      
-    </>
   )
 }
 

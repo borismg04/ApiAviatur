@@ -1,6 +1,6 @@
 import axios from "axios"
 import { useState,useEffect } from "react"
-import AutoCompleteStyles from './AutoComplete.modules.css'
+import AutoCompleteStyles from './AutoComplete.module.css'
 
 
 const AutoComplete = () => {
