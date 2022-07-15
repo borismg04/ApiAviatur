@@ -1,0 +1,23 @@
+.container {
+  background-image: url("../../assets/HeaderAviatur.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  left: 0;
+  top: 0;
+}
+
+.contailner_title{
+  color: white;
+  position: relative;
+  left: 112px;
+  top: 120px;
+  font-family: 'poppins', sans-serif;
+  line-height: 96px;
+  font-size: 40px;
+  font-weight: 900;
+}
