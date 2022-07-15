@@ -28,10 +28,10 @@ import BBcar from './BBcar.png';
 
 export default {
   // Grupo Header 
-  header,
-  search,
-  user,
-  logo,
+  header,//ok
+  search,//ok
+  user,//ok
+  logo,//ok
   //Barra de navegacion
   BBfly,
   BBhotel,

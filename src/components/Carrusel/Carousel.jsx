@@ -73,7 +73,7 @@ const Carousel = () => {
         ))} */}
         {images && images.map((pictures, index) => {
           return (
-            <div key={index[0]}>
+            <div key={index}>
               <img src={pictures.image} alt=""/>
               <h3>{pictures.city}</h3>
               <h4>$ {pictures.price}</h4>
