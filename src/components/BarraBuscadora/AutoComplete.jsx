@@ -1,6 +1,6 @@
 import axios from "axios"
 import { useState,useEffect } from "react"
-import AutoCompleteStyles from './AutoComplete.module.css'
+import styles from './AutoComplete.module.css'
 
 
 const AutoComplete = () => {
@@ -39,20 +39,29 @@ const AutoComplete = () => {
 
   return (
     <div>
-      <div className="container">
+      <div className={styles.container}>
+        <div className={styles.checkbox}>
+            <input type="checkbox" id="check" name="check" value="idaVuelta"/>
+            Ida y Vuelta 
+            <input type="checkbox" id="check" name="check" value="idaVuelta"/>
+            Ida 
+            <input type="checkbox" id="check" name="check" value="idaVuelta"/>
+            Multidestino 
+        </div>
         <input
-          className=""
-          style={{marginTop: "20px"}} 
+          className={styles.input}
+          style={{marginTop: "10px"}} 
           type="text"
           placeholder="Busca la Ciudad"
           onChange={(e) => onChangeHandler(e.target.value)}
           value={text}
         />
+        
         {suggestions && suggestions.map((city, index) => {
           return (
             <div 
               key={index}
-              className={AutoCompleteStyles.suggestion}
+              className={styles.suggestion}
               onClick={() => onSuggestionHandler(city.name_city)}
               onBlur={() => {
                 setTimeout(() => {

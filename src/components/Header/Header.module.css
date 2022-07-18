@@ -3,21 +3,42 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin: 0 auto;
-  height: 80vh;
-  width: 100vw;
+  height: 70vh;
+  width: 100%;
   display: flex;
-  left: 0;
-  top: 0;
+  flex-direction: column;
 }
 
 .contailner_title{
+  width: 50%;
+  height: 50%;
+  display: flex;
   color: white;
   position: relative;
   left: 112px;
-  top: 120px;
+  top: 105px;
   font-family: 'poppins', sans-serif;
   line-height: 96px;
-  font-size: 40px;
-  font-weight: 900;
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.icon_logo{
+  position: absolute;
+  left: 112px;
+  top: 62px;
+  width: 100px;
+  height: 100px;
+}
+/* pocision derecha */
+.container_icon{
+  width: 50%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: fixed;
+  left: 112px;
+  top: 105px;
 }

@@ -1,11 +1,50 @@
 .suggestion {
+  
   cursor: pointer;
   border-right: 1px solid rgb(57,60,255);
   border-left: 1px solid rgb(57, 60, 255);
   border-bottom: 1px solid rgb(45, 170, 253);
+
+
 }
 
 .suggestion:hover {
   background-color: rgb(45, 170, 253);
   color: white;
+}
+
+.container{
+  position: relative;
+  width: 1224px;
+  height: 165px;
+  left: 108px;
+  top: -60px;
+  background: #fffdfd;
+  border-radius: 12px;
+  box-shadow: 4px 8px 5px rgba(141, 141, 141, 0.534);
+}
+
+.input{
+  background-image: url("../../assets/BBubicacion.png");
+  background-repeat: no-repeat;
+  background-size: 0%;
+  box-sizing: border-box;
+  position: absolute;
+  width: 445px;
+  height: 46px;
+  left: 30px;
+  top: 40px;
+  border: 1px solid #D2D2D2;
+  border-radius: 7px;
+
+}
+
+.checkbox{
+  position: static;
+  width: 320px;
+  height: 18px;
+  left: 120px;
+  top: 100px;
+  flex-direction: row;
+  justify-content: space-between;
 }
